@@ -1,0 +1,44 @@
+TranslationUnitDecl 0x7fdef08264d0 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0x7fdef0826a60 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0x7fdef0826740 '__int128'
+|-TypedefDecl 0x7fdef0826ad0 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0x7fdef0826760 'unsigned __int128'
+|-TypedefDecl 0x7fdef0826e18 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0x7fdef0826bc0 'struct __NSConstantString_tag'
+|   `-CXXRecord 0x7fdef0826b28 '__NSConstantString_tag'
+|-TypedefDecl 0x7fdef0826eb0 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0x7fdef0826e70 'char *'
+|   `-BuiltinType 0x7fdef0826560 'char'
+|-TypedefDecl 0x7fdef0858000 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag [1]'
+| `-ConstantArrayType 0x7fdef0827190 'struct __va_list_tag [1]' 1 
+|   `-RecordType 0x7fdef0826fa0 'struct __va_list_tag'
+|     `-CXXRecord 0x7fdef0826f08 '__va_list_tag'
+|-UsingDirectiveDecl 0x7fdef08580c0 </Users/MazenSharkh/Documents/PL/PL_Project/nadia_test.cpp:2:1, col:17> col:17 Namespace 0x7fdef0858058 'std'
+|-FunctionDecl 0x7fdef0858210 <line:4:1, line:8:1> line:4:6 used func 'void (int &)'
+| |-ParmVarDecl 0x7fdef0858150 <col:11, col:16> col:16 used nadia 'int &'
+| `-CompoundStmt 0x7fdef0858518 <col:22, line:8:1>
+|   |-UnaryOperator 0x7fdef0858318 <line:5:3, col:8> 'int' postfix '++'
+|   | `-DeclRefExpr 0x7fdef08582f0 <col:3> 'int' lvalue ParmVar 0x7fdef0858150 'nadia' 'int &'
+|   `-IfStmt 0x7fdef08584e0 <line:6:3, line:7:15>
+|     |-<<<NULL>>>
+|     |-<<<NULL>>>
+|     |-BinaryOperator 0x7fdef0858398 <line:6:7, col:16> '_Bool' '<='
+|     | |-ImplicitCastExpr 0x7fdef0858380 <col:7> 'int' <LValueToRValue>
+|     | | `-DeclRefExpr 0x7fdef0858338 <col:7> 'int' lvalue ParmVar 0x7fdef0858150 'nadia' 'int &'
+|     | `-IntegerLiteral 0x7fdef0858360 <col:16> 'int' 10
+|     |-CallExpr 0x7fdef08584b0 <line:7:5, col:15> 'void'
+|     | |-ImplicitCastExpr 0x7fdef0858498 <col:5> 'void (*)(int &)' <FunctionToPointerDecay>
+|     | | `-DeclRefExpr 0x7fdef0858440 <col:5> 'void (int &)' lvalue Function 0x7fdef0858210 'func' 'void (int &)'
+|     | `-DeclRefExpr 0x7fdef0858418 <col:10> 'int' lvalue ParmVar 0x7fdef0858150 'nadia' 'int &'
+|     `-<<<NULL>>>
+`-FunctionDecl 0x7fdef0858598 <line:10:1, line:14:1> line:10:5 main 'int (void)'
+  `-CompoundStmt 0x7fdef0858830 <col:11, line:14:1>
+    |-DeclStmt 0x7fdef08586f0 <line:11:3, col:10>
+    | `-VarDecl 0x7fdef0858670 <col:3, col:9> col:7 used x 'int' cinit
+    |   `-IntegerLiteral 0x7fdef08586d0 <col:9> 'int' 1
+    |-CallExpr 0x7fdef08587c8 <line:12:2, col:8> 'void'
+    | |-ImplicitCastExpr 0x7fdef08587b0 <col:2> 'void (*)(int &)' <FunctionToPointerDecay>
+    | | `-DeclRefExpr 0x7fdef0858788 <col:2> 'void (int &)' lvalue Function 0x7fdef0858210 'func' 'void (int &)'
+    | `-DeclRefExpr 0x7fdef0858760 <col:7> 'int' lvalue Var 0x7fdef0858670 'x' 'int'
+    `-ReturnStmt 0x7fdef0858818 <line:13:3, col:10>
+      `-IntegerLiteral 0x7fdef08587f8 <col:10> 'int' 0

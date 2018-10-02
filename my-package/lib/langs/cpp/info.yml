@@ -1,0 +1,4 @@
+languageName: C++
+fileExtension: .cpp
+parseExtension: .py
+runCommand: python "[file]"
